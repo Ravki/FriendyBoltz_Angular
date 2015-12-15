@@ -1,0 +1,171 @@
+.friendyboltz{
+	background: url("/assets/img/coverPic9.jpg");
+}
+/*.friendyboltz a{
+	font-family: cursive;
+    color: #880808;
+    font-size: 1.8em;
+    font-weight: bold;
+}*/
+.site-logo p{
+	color: black;
+	letter-spacing: 4px;
+}
+.site-logo button{
+	float: right;
+	position: relative;
+	top:-50px;
+}
+.site-logo{
+	height: 60px;
+	/*background: #282727;*/
+	font-size: 2.5em;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.members-intro{
+	background-color: white;
+	position: relative;
+	top:-50px;
+}
+.members-intro img{
+	height:140px;
+	width:175px;
+	border-radius: 90px;
+}
+.members-intro p{
+	font-size: 1.5em;
+	font-family: monospace;
+}
+.sravya{
+	background: url("/assets/img/sravya.jpg");
+}
+.swetha{
+	background: url("/assets/img/swetha.jpg");
+}
+.shan{
+	background: url("/assets/img/shan.jpg");
+}
+.ben{
+	background: url("/assets/img/ben.jpg");
+}
+
+.ramya{
+	background: url("/assets/img/ramya.jpg");
+}
+.vamsi{
+	background: url("/assets/img/vamsi.jpg") 0px -15px;
+}
+.ravi{
+	background: url("/assets/img/ravi1.jpg");
+}
+.supriya{
+	background: url("/assets/img/supu1.jpg");
+}
+
+.members-pic{
+	border-radius: 15%;
+	background-size: cover;
+	height: 150px
+}
+.members-intro h1{
+	font-family: fantasy;
+    letter-spacing: 4px;
+    word-spacing: 15px;
+    font-size: 3em
+}
+.member-row{
+	padding-top:10px;
+}
+.member-row a{
+	font-weight:bold;
+}
+.cover-pic{
+	background: url("/assets/img/coverPic.jpg") 0px -50px;
+    background-size: cover;
+    height: 550px
+}
+.profile-pic img{
+	width: 340px;
+    height: 450px;
+}
+.profile-content{
+	font-size: 15px;
+	margin-top:30px; 
+}
+
+.profile-details h1{
+	font-style: italic;
+	font-size: 38px;
+}
+.details-info{
+	margin-top: 7px;
+}
+.slider-navbar ul.navbar-nav{
+	text-align: right;
+    position: relative;
+    right: 3px;
+    top: 10px;
+}
+.slider-navbar{
+	margin-bottom: 0;
+}
+.raviPage .slider-navbar{
+	 margin-top: 60px;
+}
+.raviPage .aboutMe{
+	background-color: #FFFFFF;
+	margin-top: 20px;
+}
+.raviPage .member-picture{
+	height:400px;
+	background: url("/assets/img/ravi3.jpg");
+	background-size: cover;
+	margin-top:20px;
+}
+ul.navbar-nav > li{
+	width: 79%;
+}
+ul.navbar-nav > li > button{
+	font-size: 1.3em
+}
+h2{
+	color: white;
+    font-family: monospace;
+    letter-spacing: 3px;
+}
+.raviPage{
+	background: url("/assets/img/2.jpg");
+	background-size: cover;
+}
+.member-details > div{
+	padding-top: 10px;
+	font-size: 1.5em;
+}
+.member-details > div.col-sm-4{
+	text-align: right;
+}
+.member-pic{
+	background: url("/assets/img/ravi.jpg");
+	background-size: cover;
+	height:500px;
+}
+.nav-pills>li>a{
+	background-color: #FFFFFF;
+	border-radius: 0px;
+	border-right:2px solid black;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: black; 
+}
+@media (min-width: 768px){
+	.navbar-nav {
+	    float: none;
+	}
+	.navbar-nav>li {
+	    width: 33.33%;
+	}
+	.navbar-default .navbar-nav>li>a {
+    	text-align: center;
+    }
+}	
