@@ -4,24 +4,40 @@
 		<base href="/"></base>
 		<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-route.min.js"></script>
+		
 		<script type="text/javascript" src="app.module.js"></script>
 		<script type="text/javascript" src="app.routes.js"></script>
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				if($(window).scrollTop()>40){
+					$(".navbar").removeClass("navbar-transparent");
+				}
+				else{
+					$(".navbar").addClass("navbar-transparent");
+				}
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+     			$(".carousel").carousel({
+     				interval:1500,
+     				cycle:true
+     				
+    			});
+    			function carouselStart(){
+    				$(".carousel").carousel();
+    			}
+    			setTimeout(carouselStart,2000);
+			});
+			
+		</script>
+
 	</head>
 	<body>
-		<header class="navbar navbar-inverse navbar-fixed-top slider-navbar" id="top" role="banner">
-			<div class="container-fluid">
-			  	<div class="navbar-header">
-			  		<h2>FRIENDY BOLTZ</h2>
-			  	</div>
-			  	<div class="collapse navbar-collapse">
-			  		<ul class="nav navbar-nav">
-			  			<li><button class="btn btn-primary">Sign In</button></li>
-			  		</ul>	
-			  	</div>
-			</div>
-		</header>
 		<div ng-view></div>
 	</body>
 </html>
