@@ -175,7 +175,7 @@ hr{
 .skills .progress{
 	margin-top: -5px 0px 30px 0px;
 }
-.aboutMe h2, .skills h2{
+.aboutMe h2, .skills h2, .resume h2{
 	font-weight: bolder;
 	color: #2c3e50;
 	margin-bottom: 15px;
@@ -349,6 +349,50 @@ ul.navbar-nav > li > button{
 	color: peru;
 	line-height: 45px;
 }
+.resume .left-res, .resume .horizontal-res, .resume .center-res, .resume .right-res {
+	height:180px;
+	font-weight: bold;
+	background-color:rgb(250, 250, 250);
+	padding-top: 20px;
+
+}
+.resume .left-res{
+	text-align: right;
+}
+.resume .center-res{
+	border-radius: 50%;
+	background-color: transparent;
+    border: 1px solid #9A9898;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.3em;
+}
+.resume .horizontal-res{
+	border: 2px solid transparent;
+    border-right: 2px solid #F0ECEC;
+    background-color: transparent;
+}
+.resume .right-res{
+	text-align: left;
+}
+.resume h4{
+	color:#E87E04;
+	font-weight: bold;
+    letter-spacing: 1px;
+}
+.resume h3{
+	font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.resume p{
+	font-weight: 500;
+}
+
+/*.resume .right-res{
+	height:180px;
+	
+	background-color:red;
+}*/
 @media screen and (min-width: 768px){
 	.carousel-indicators {
 	    bottom: 0px;
