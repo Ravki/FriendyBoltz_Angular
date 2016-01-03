@@ -1,3 +1,3 @@
 
-angular.module("myApp",['routerModule']);
+angular.module("myApp",['routerModule','raviModule']);
 

@@ -18,7 +18,7 @@
 	</div>
 </header>
 
-<div class="container-fluid raviPage">
+<div class="container-fluid raviPage" ng-controller="raviPageController">
 		<div class="row">
 			<div class="col-sm-12 member-picture" style="height">
 				<div class="overlay"></div>
@@ -54,7 +54,7 @@
 						<hr>
 					</div>
 					<div class="col-sm-6">
-						<p>My Up-to-date working technologies include HTM5, CSS3, Javascript, Angular JS, jQuery, Responsive Design, Bootstrap3, JSON, RESTful Web Services and some modules of Node JS.</p>
+						<p>My Up-to-date working technologies include HTML5, CSS3, Javascript, Angular JS, jQuery, Responsive Design, Bootstrap3, JSON, RESTful Web Services and some modules of Node JS.</p>
 						<p>Good debugging skills using BROWSER DEBUGGING TOOLS of Chrome and Firefox.</p>
 						<p>Experience in solving cross-browser issues and implementing design of page in older versions of browsers, especially IE8.</p>
 						<p>An Oracle Certified JAVA SE6 Professional.</p>
@@ -166,35 +166,65 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-10 col-sm-push-1 blog">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<h2>BLOG</h2>
+						<hr>
+					</div>
+					<div class="col-xs-6 col-sm-6 summer-blog">
+						
+						<div class="jumbotron">
+							<div class="overlay"></div>
+							<h3>My Journey to Goa</h3>
+				  			<p>Summer Trip</p>
+				  			<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more..</a></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 html5-blog">
+						
+						<div class="jumbotron">
+							<div class="overlay"></div>
+							<h3>HTML5 in 10 minutes</h3>
+				  			<p>Education tutorial</p>
+				  			<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more..</a></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6">
+					</div>
+					<div class="col-xs-6 col-sm-6">
+					</div>
+				</div>
+			</div>
 			<div class="col-xs-12 col-sm-10 col-sm-push-1 gallery">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h2>GALLERY</h2>
 						<hr>
 					</div>
-					<div class="col-xs-12 col-sm-12">
+					<div class="col-xs-12 col-sm-12 gallery-synopsis">
 						<div class="row">
-							<div class="col-xs-6 col-sm-4">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
 								<a href="" class="thumbnail">
 									<img src="assets/img/ravi22.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
+							<div class="col-xs-6 col-sm-4" data-imageindex="2">
 								<a href="" class="thumbnail">
 									<img src="assets/img/ravi19.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
+							<div class="col-xs-6 col-sm-4" data-imageindex="3">
 								<a href="" class="thumbnail">
 									<img src="assets/img/ravi23.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
+							<div class="col-xs-6 col-sm-4" data-imageindex="4">
 								<a href="" class="thumbnail">
 									<img src="assets/img/ravi17.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
+							<div class="col-xs-6 col-sm-4" data-imageindex="5">
 								<a href="" class="thumbnail">
 									<img src="assets/img/ravi18.jpg">
 								</a>
@@ -236,38 +266,22 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-10 col-sm-push-1 blog">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12">
-						<h2>BLOG</h2>
-						<hr>
-					</div>
-					<div class="col-xs-6 col-sm-6 summer-blog">
-						
-						<div class="jumbotron">
-							<div class="overlay"></div>
-							<h3>My Journey to Goa</h3>
-				  			<p>Summer Trip</p>
-				  			<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more..</a></p>
+					<div class="col-xs-12 col-sm-12 gallery-maximize">
+						<div class="row">
+							<div class="col-sm-1 direction-arrow">
+								<a href="" class="left-sign"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							</div>
+							<div class="col-sm-push-9 col-sm-1">
+								<a href="" class="close-sign"><span class="glyphicon glyphicon-remove"></span></a>
+							</div>
+							<div class="col-sm-1 col-sm-push-9 direction-arrow">
+								<a href="" class="right-sign"><span class="glyphicon glyphicon-chevron-right"></span></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-sm-6 html5-blog">
-						
-						<div class="jumbotron">
-							<div class="overlay"></div>
-							<h3>HTML5 in 10 minutes</h3>
-				  			<p>Education tutorial</p>
-				  			<p><a class="btn btn-primary btn-lg" href="#" role="button">Read more..</a></p>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-6">
-					</div>
-					<div class="col-xs-6 col-sm-6">
 					</div>
 				</div>
 			</div>
+		
 			<div class="col-xs-12 col-sm-12 contact-me">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
@@ -277,7 +291,7 @@
 					<div class="col-xs-12 col-sm-8 col-sm-push-2">
 						<div class="row">
 							<div class="col-xs-12 col-sm-12">
-								<p>You can reach me at mentioned ways or drop a mail through below mentioned box</p>
+								<p>You can reach me through below mentioned ways or drop a mail to my mail id.</p>
 							</div>
 							<div class="col-xs-12 col-sm-4">
 								<p><span class="glyphicon glyphicon-home"></span><br>AVL Aakruthi apts, Manikonda</p>
@@ -292,7 +306,7 @@
 								<li>
 									<ul><a href="https://www.facebook.com/profile.php?id=100001756550718"><i class="fa fa-facebook"></i></a></ul>
 									<ul><a href="https://twitter.com/ravki1991"><i class="fa fa-twitter"></i></a></ul>
-									<ul><a href="in.linkedin.com/in/ravki1991"><i class="fa fa-linkedin"></i></a></ul>
+									<ul><a href="https://in.linkedin.com/in/ravki1991"><i class="fa fa-linkedin"></i></a></ul>
 								</li>
 							</div>
 						</div>
@@ -300,7 +314,7 @@
 
 				</div>
 			</div>
-		</div>
+		
 </div>
 <footer>
 	<div class="container-fluid">
