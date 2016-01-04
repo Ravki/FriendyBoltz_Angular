@@ -6,12 +6,12 @@
 	  	</div>
 	  	<div class="collapse navbar-collapse col-sm-9 pull-right">
 	  		<ul class="nav navbar-nav">
-	  			<li role="presentation"><a href="#">ABOUT</a></li>
-				<li role="presentation"><a href="#">SKILLS</a></li>
-				<li role="presentation"><a href="#">RESUME</a></li>
-				<li role="presentation"><a href="#">BLOG</a></li>
-				<li role="presentation"><a href="#">GALLERY</a></li>
-				<li role="presentation"><a href="#">CONTACT</a></li>
+	  			<li role="presentation"><a href="#aboutMe">ABOUT</a></li>
+				<li role="presentation"><a href="#skills">SKILLS</a></li>
+				<li role="presentation"><a href="#resume">RESUME</a></li>
+				<li role="presentation"><a href="#blog">BLOG</a></li>
+				<li role="presentation"><a href="#gallery">GALLERY</a></li>
+				<li role="presentation"><a href="#contact-me">CONTACT</a></li>
 				<!-- <li><a href="" class="btn">Sign In</a></li> -->
 	 		</ul>	
 	  	</div>
@@ -27,11 +27,11 @@
 				<div class="jumbotron">
 				  <h1>Hello, I'm Ravi Kiran</h1>
 				  <p>Front End Developer</p>
-				  <p><a class="btn btn-primary btn-lg" href="#" role="button">About Me</a></p>
+				  <p><a class="btn btn-primary btn-lg" href="#aboutMe" role="button">About Me</a></p>
 				</div>
 			</div>
 						
-			<div class="col-xs-12 col-sm-10 col-sm-push-1 aboutMe">
+			<div id="aboutMe" class="col-xs-12 col-sm-10 col-sm-push-1 aboutMe">
 				<div class="row">
 					<div class="col-sm-12 col-xs-12">
 						<h2>ABOUT ME</h2>
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-10 col-sm-push-1 skills">
+			<div id="skills" class="col-xs-12 col-sm-10 col-sm-push-1 skills">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h2>MY SKILLS</h2>
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-10 col-sm-push-1 resume">
+			<div id="resume" class="col-xs-12 col-sm-10 col-sm-push-1 resume">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h2>EXPERIENCE</h2>
@@ -166,7 +166,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-10 col-sm-push-1 blog">
+			<div id="blog" class="col-xs-12 col-sm-10 col-sm-push-1 blog">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h2>BLOG</h2>
@@ -196,7 +196,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-10 col-sm-push-1 gallery">
+			<div id="gallery" class="col-xs-12 col-sm-10 col-sm-push-1 gallery">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h2>GALLERY</h2>
@@ -205,84 +205,81 @@
 					<div class="col-xs-12 col-sm-12 gallery-synopsis">
 						<div class="row">
 							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
-								<a href="" class="thumbnail">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi22.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4" data-imageindex="2">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi19.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4" data-imageindex="3">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi23.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4" data-imageindex="4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi17.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4" data-imageindex="5">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi18.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi20.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi14.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi16.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi15.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi21.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi11.jpg">
 								</a>
 							</div>
-							<div class="col-xs-6 col-sm-4">
-								<a href="" class="thumbnail">
+							<div class="col-xs-6 col-sm-4" ng-click="imageMaxShow()">
+								<a href="#" class="thumbnail">
 									<img src="assets/img/ravi24.jpg">
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-12 gallery-maximize">
+					<div class="col-sm-12 gallery-maximize">
 						<div class="row">
-							<div class="col-sm-1 direction-arrow">
-								<a href="" class="left-sign"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							<div class="col-sm-12" style="text-align:right;" ng-click="imageMaxClose()">
+								<a href="#" class="close-sign"><span class="glyphicon glyphicon-remove"></span></a>
 							</div>
-							<div class="col-sm-push-9 col-sm-1">
-								<a href="" class="close-sign"><span class="glyphicon glyphicon-remove"></span></a>
-							</div>
-							<div class="col-sm-1 col-sm-push-9 direction-arrow">
-								<a href="" class="right-sign"><span class="glyphicon glyphicon-chevron-right"></span></a>
+							<div class="col-sm-10 col-sm-push-1 photo-block">
+								
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		
-			<div class="col-xs-12 col-sm-12 contact-me">
+			<div id="contact-me" class="col-xs-12 col-sm-12 contact-me">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12">
 						<h2>CONTACT ME</h2>

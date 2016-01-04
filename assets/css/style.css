@@ -3,8 +3,18 @@
 	font-family: awesome-webfont;
 	src: url("fonts/MetaWebPro-Light.woff");
 }
+body{
+	position: relative;
+}
 html,body{
 	font-family: awesome-webfont;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #000000;
+    background-color: #2BE2E2;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
 }
 footer{
 	background: #2c3e50;
@@ -147,7 +157,7 @@ footer{
 .raviPage{
 	background-color: #e7e9ec;
 }
-.aboutMe, .skills, .resume{
+.aboutMe, .skills, .resume, .gallery, .blog, .contact-me{
 	/*background-color: #FFFFFF;*/
 	margin-top: 30px;
 	background: #fff;
@@ -417,18 +427,25 @@ ul.navbar-nav > li > button{
 	background-size: cover;
 	/*background-color: transparent;*/
 }
+.gallery{
+	padding-bottom: 50px;
+}
+.photo-block{
+	height: 500px;
+	background-size: cover !important;
+}
 .gallery-maximize{
 	display: none;
-	height: 700px;
+	/*height: 700px;*/
 }
-.gallery-maximize .row{
+/*.gallery-maximize .row{
 	display: table-cell;
 }
 .gallery-maximize .direction-arrow{
 	position: relative;
     top: 350px;
     
-}
+}*/
 .gallery-maximize .glyphicon{
 	color: black;
 	font-size: 2em;

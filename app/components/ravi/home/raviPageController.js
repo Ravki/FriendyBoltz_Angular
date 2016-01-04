@@ -3,11 +3,13 @@ angular.module('raviModule', [])
 		$scope.imageMaxShow = function(){
 
 				//var currentImageIndex = $(this).data("imageindex");
+			$scope.currentIndexDiv = $($(event.target).parent()).parent();
 			$(".gallery-synopsis").css("display","none");
 			$(".gallery-maximize").css("display","block");
-			var currentImageURL = $(event).find("img").attr("src");
-			$(".gallery-maximize .row").css("background","url("+currentImageURL+")");
-			$(".gallery-maximize .row").css("background-size","cover");
+			var currentImageUrl = $(event.target).attr("src");
+			$(".photo-block").css("background","url("+currentImageUrl+")");
+			$(".gallery-maximize").attr("tabindex","-1").focus();
+
 		}
 
 		$scope.imageMaxClose = function(){
