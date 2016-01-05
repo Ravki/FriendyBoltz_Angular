@@ -18,4 +18,17 @@ angular.module('raviModule', [])
 			$(".gallery-maximize").css("display","none");
 		}
 		
-	}]);
+	}])
+	.directive('smoothScroll',function(){
+		return{
+			restrict: 'A',
+			link:function(scope,$elm,attrs){
+				var idToScroll = attrs.href;
+				$elm.on('click',function(){
+					$target = $(idToScroll);
+					$("html, body").animate({scrollTop: $target.offset().top}, "slow");
+					
+				});
+			}
+		}
+	});

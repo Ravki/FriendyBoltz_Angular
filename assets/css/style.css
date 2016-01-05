@@ -388,7 +388,7 @@ ul.navbar-nav > li > button{
 }
 .resume .horizontal-res{
 	border: 2px solid transparent;
-    border-right: 2px solid #F0ECEC;
+    border-right: 2px solid #B3B2B2;
     background-color: transparent;
 }
 .resume .right-res{
@@ -430,9 +430,15 @@ ul.navbar-nav > li > button{
 .gallery{
 	padding-bottom: 50px;
 }
+.gallery a{
+	cursor: pointer;
+}
 .photo-block{
 	height: 500px;
 	background-size: cover !important;
+}
+.gallery-maximize:focus{
+	outline: none !important;
 }
 .gallery-maximize{
 	display: none;
