@@ -17,16 +17,6 @@
 		<script type="text/javascript" src="app/components/ravi/home/raviPageController.js"></script>
 		
 		<script type="text/javascript">
-			$(window).scroll(function(){
-				if($(window).scrollTop()>40){
-					$(".navbar").removeClass("navbar-transparent");
-				}
-				else{
-					$(".navbar").addClass("navbar-transparent");
-				}
-			});
-		</script>
-		<script type="text/javascript">
 			$(document).ready(function(){
      			$(".carousel").carousel({
      				interval:1500,
@@ -40,11 +30,9 @@
 			});
 			
 		</script>
-		<script type="text/javascript">
-
-		</script>
+		
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="250">
+	<body data-spy="scroll" data-target=".navbar">
 		<div ng-view></div>
 	</body>
 </html>

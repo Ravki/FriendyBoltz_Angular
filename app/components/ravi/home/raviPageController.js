@@ -19,6 +19,21 @@ angular.module('raviModule', [])
 		}
 		
 	}])
+	.directive('navScroll',function(){
+		return{
+			restrict: 'A',
+			link:function(){
+				$(window).scroll(function(){
+				if($(window).scrollTop()>40){
+					$(".navbar").removeClass("navbar-transparent");
+				}
+				else{
+					$(".navbar").addClass("navbar-transparent");
+				}
+			});
+			}
+		}
+	})
 	.directive('smoothScroll',function(){
 		return{
 			restrict: 'A',

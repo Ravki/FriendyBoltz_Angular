@@ -9,6 +9,9 @@ angular.module("routerModule",['ngRoute'])
 		.when('/ravi',{
 			templateUrl:'app/components/ravi/home/raviView.html'
 		})
+		.when('/htmlBlog',{
+			templateUrl:'app/components/ravi/blog/htmlBlog.html'
+		})
 		.otherwise({
 			redirectTo:'/'
 		});

@@ -10,8 +10,8 @@ html,body{
 	font-family: awesome-webfont;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #000000;
-    background-color: #2BE2E2;
+    color: #2BE2E2;
+    background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 	color: #fff;
@@ -417,15 +417,18 @@ ul.navbar-nav > li > button{
 	background-size: cover;
 	display: table;
 }
-.blog .overlay{
-	display: table-cell;
-	background-color: rgba(34,49,63,.5);
-}
-.blog .jumbotron{
+
+.blog .bg-image{
 	/*padding-top: 130px;*/
+	display: table;
 	background: url("/assets/img/coverPic6.jpg");
 	background-size: cover;
 	/*background-color: transparent;*/
+}
+.blog .overlay{
+	display: table-cell;
+	background-color: rgba(34,49,63,.5);
+	padding: 95px 0px 0px 30px;
 }
 .gallery{
 	padding-bottom: 50px;
@@ -480,6 +483,14 @@ ul.navbar-nav > li > button{
 	display: inline;
 	margin: 30px;
 }
+/*Blogs pages-START*/
+.detail-blog h1{
+	font-weight: bold;
+}
+.detail-blog xmp{
+	white-space: pre-line;
+}
+/*Blogs pages-END*/
 @media screen and (min-width: 768px){
 	.carousel-indicators {
 	    bottom: 0px;
