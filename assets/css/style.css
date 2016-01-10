@@ -13,6 +13,10 @@ html,body{
     color: #2BE2E2;
     background-color: transparent;
 }
+.navbar-default .navbar-nav>.active>a:target{
+	color: transparent;
+    background-color: transparent;
+}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 	color: #fff;
 }
@@ -164,6 +168,7 @@ footer{
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
     -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
     box-shadow: 0 1px 1px rgba(0,0,0,0.15),-1px 0 0 rgba(0,0,0,0.03),1px 0 0 rgba(0,0,0,0.03),0 1px 0 rgba(0,0,0,0.12);
+    padding-bottom: 30px;
 
 }
 .raviPage .member-picture{
@@ -375,6 +380,13 @@ ul.navbar-nav > li > button{
 	padding-top: 20px;
 
 }
+.resume .resume-button{
+	padding-top: 20px;
+}
+.resume .resume-button a{
+	padding: 14px;
+    font-size: 1.5em;
+}
 .resume .left-res{
 	text-align: right;
 }
@@ -484,11 +496,34 @@ ul.navbar-nav > li > button{
 	margin: 30px;
 }
 /*Blogs pages-START*/
+.blog-title, .html-intro, .html-elements, .html-tags, .html-attributes, .html5-elements{
+	padding-bottom: 10px;
+}
+.html-tags xmp, .html-attributes xmp{
+	margin-top: -15px;
+}
+
+.detail-blog h2{
+	font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+.detail-blog h3{
+	font-weight: bold;
+    
+}
+.detail-blog p{
+	font-size: 20px;
+}
 .detail-blog h1{
 	font-weight: bold;
+	font-size: 4.5em;
+	text-decoration: underline;
 }
 .detail-blog xmp{
 	white-space: pre-line;
+	font-size: 17px;
 }
 /*Blogs pages-END*/
 @media screen and (min-width: 768px){
