@@ -29,6 +29,9 @@ footer{
     margin-left: -15px;
     margin-right: -15px;
 }
+footer.blog-footer{
+	margin: 0px;
+}
 .friendyboltz{
 	background: url("/assets/img/coverPic9.jpg");
 }
@@ -225,7 +228,7 @@ ul.navbar-nav > li > button{
 	color: white;
 	font-weight: bold;
 }
-.member-header.navbar-default{
+.member-header.navbar-default, .blog-header.navbar-default {
 	background-color: #2c3e50;
     border-color: #2c3e50;
     
@@ -425,8 +428,6 @@ ul.navbar-nav > li > button{
 	background-color:red;
 }*/
 .blog .col-sm-6{
-	
-	background-size: cover;
 	display: table;
 }
 
@@ -439,8 +440,12 @@ ul.navbar-nav > li > button{
 }
 .blog .overlay{
 	display: table-cell;
-	background-color: rgba(34,49,63,.5);
+	background-color: rgba(66, 71, 76, 0.7);
 	padding: 95px 0px 0px 30px;
+	color: #fff;
+}
+.html5-blog{
+	background: url("/assets/img/html-logo.png") no-repeat 314px 10px;
 }
 .gallery{
 	padding-bottom: 50px;
@@ -511,6 +516,7 @@ ul.navbar-nav > li > button{
 }
 .detail-blog h3{
 	font-weight: bold;
+	letter-spacing: 1px;
     
 }
 .detail-blog p{
@@ -520,10 +526,19 @@ ul.navbar-nav > li > button{
 	font-weight: bold;
 	font-size: 4.5em;
 	text-decoration: underline;
+	letter-spacing: 10px;
 }
 .detail-blog xmp{
 	white-space: pre-line;
 	font-size: 17px;
+}
+.detail-blog table{
+	text-align: center;
+}
+.detail-blog thead{
+	font-weight: bold;
+    color: black;
+    font-size: 1.5em;
 }
 /*Blogs pages-END*/
 @media screen and (min-width: 768px){

@@ -25,10 +25,10 @@ angular.module('raviModule', [])
 			link:function(){
 				$(window).scroll(function(){
 				if($(window).scrollTop()>40){
-					$(".navbar").removeClass("navbar-transparent");
+					$(".navbar.member-header").removeClass("navbar-transparent");
 				}
 				else{
-					$(".navbar").addClass("navbar-transparent");
+					$(".navbar.member-header").addClass("navbar-transparent");
 				}
 			});
 			}
