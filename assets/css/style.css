@@ -546,3 +546,9 @@ ul.navbar-nav > li > button{
 	    bottom: 0px;
 	}
 }
+
+@media screen and (min-device-width: 768px){
+	.raviPage {
+	    background-color: red;
+	}
+}
